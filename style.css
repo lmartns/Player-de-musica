@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #16191e;
+}
+
+.music-player {
+    font-size: 16px;
+    width: 80vw;
+    max-width: 25em;
+    background-color: #fff;
+    padding: 3em 1.8em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.5em;
+    box-shadow: 0.6em 1.2em 3em rgba(0, 0, 0, 0.25);
+}
+
+img {
+    width: 100%;
+    margin-top: 1.25em;
+}
