@@ -104,7 +104,7 @@ img {
     display: inline-block;
     height: 100%;
     width: 20%;
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     border-radius: 0.18em;
 }
 
@@ -115,6 +115,61 @@ img {
     font-family: "Roboto Mono", monospace;
 }
 
+#playlist-container {
+    background-color: #16191e;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+    padding: 2em 1em;
+    font-family: "Poppins", sans-serif;
+}
+
+#close-button {
+    border: none;
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+    margin-left: 90%;
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+    cursor: pointer;
+}
+
+.playlist-song-details {
+    margin-left: 1em;
+}
+
+.playlist-song-details>span {
+    display: block;
+    color: #ffffff;
+}
+
+#playlist-song-artist-album {
+    color: #646464;
+    font-size: 0.8em;
+}
+
+button.active i {
+    color: red;
+}
+
+.playlist-image-container {
+    width: 3em;
+}
+
 #current-time {
     color: #ffffff;
 }
@@ -123,10 +178,12 @@ img {
     color: #ffffff;
 }
 
-#close-button {
+#playlist {
     color: #949494;
 }
 
-#playlist {
-    color: #949494;
+@media screen and (max-width: 450px) {
+    .music-player {
+        font-size: 14px;
+    }
 }
