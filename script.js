@@ -126,7 +126,7 @@ const nextSong = () => {
     let randIndex = Math.floor(Math.random() * songList.length);
     console.log(randIndex);
     setSong(randIndex);
-    playAudio;
+    playAudio();
   }
 };
 
@@ -170,6 +170,12 @@ nextButton.addEventListener("click", nextSong);
 pauseButton.addEventListener("click", pauseAudio);
 
 prevButton.addEventListener("click", previousSong);
+
+playlistSongs.addEventListener("click", playAudio);
+
+playlistSongs.addEventListener("click", () => {
+  playlistContainer.classList.add("hide");
+});
 
 isTouchDevice();
 progressBar.addEventListener(events[deviceType].click, (event) => {
